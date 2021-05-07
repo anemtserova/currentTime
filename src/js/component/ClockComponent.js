@@ -7,11 +7,11 @@ const ClockComponent = () => {
 		setTimeout(() => new Date(), 1000);
 	}, [currentTime]);
 
-	// const textColor = {
-	// 	color: "red"
-	// };
+	const textColor = {
+		color: "red"
+	};
 
-	return <div>{currentTime.toString()}</div>;
+	return <div style={textColor}>{currentTime.toString()}</div>;
 };
 
 export default ClockComponent;
